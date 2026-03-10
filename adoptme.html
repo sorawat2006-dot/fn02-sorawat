@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Me Form</title>
+    <style>
+        .student-info {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Dog Adoption Interest Form</h1>
+    <h2>Personal Information</h2>
+    <form id="adoptForm" action="success.html" method="get">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <br>
+        <label for="housing">Type of Residence:</label>
+        <select id="housing" name="housing">
+            <option value="house">House</option>
+            <option value="condominium">Condominium</option>
+            <option value="apartment">Apartment</option>
+            <option value="dormitory">Dormitory</option>
+        </select>
+        <br>
+        <p>Where will the dog be kept?</p>
+        <input type="radio" id="indoor" name="living_place" value="indoor">
+        <label for="indoor">Indoor</label>
+        <input type="radio" id="outdoor" name="living_place" value="outdoor">
+        <label for="outdoor">Outdoor</label>
+        <br>
+        <label for="pets">Number of Current Pets:</label>
+        <input type="number" id="pets" name="pets">
+        <br>
+        <input type="checkbox" id="acknowledge" name="acknowledge">
+        <label for="acknowledge">I understand that submitting this form does not guarantee adoption.</label>
+        <br>
+        <button type="submit">Submit Form</button>
+    </form>
+    <script src="adoptme.js"></script>
+    <p class="student-info">6833249421 Sorawat Srisakhon</p>
+</body>
+</html>
